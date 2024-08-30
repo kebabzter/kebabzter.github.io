@@ -12,6 +12,13 @@ export function scrollToSection() {
     });
 }
 
+export function scrollToBottom(){
+    let button = document.getElementById("button-about");
+    button.addEventListener("click", () => {
+        window.scrollTo({top: document.body.scrollHeight, behavior:"smooth" })
+    })
+}
+
 export function typewriter() {
     const element = document.querySelector(".typewrite");
     const text = "Hi there, my name is Gabriel👋";

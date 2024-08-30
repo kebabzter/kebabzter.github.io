@@ -1,7 +1,8 @@
-import { typewriter, scrollToSection, fullAge } from "./util";
+import { typewriter, scrollToSection, fullAge, scrollToBottom } from "./util";
 
 export{
     typewriter,
     scrollToSection,
-    fullAge
+    fullAge,
+    scrollToBottom
 }
