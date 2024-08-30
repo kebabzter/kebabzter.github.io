@@ -1,4 +1,6 @@
-import { typewriter, scrollToSection } from "./util.js";
+import { typewriter, scrollToSection, fullAge } from "./util.js";
 
 typewriter();
 scrollToSection();
+fullAge();
+
