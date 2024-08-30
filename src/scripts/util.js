@@ -3,7 +3,7 @@ export function scrollToSection() {
     const section = document.querySelector(".about-me");
     const sectionRect = section.getBoundingClientRect();
     const sectionCenterY =
-        sectionRect.top + window.scrollY + sectionRect.height;
+        sectionRect.top + window.scrollY + (sectionRect.height / 2);
     const offset = window.innerHeight / 2;
     const scrollPosition = sectionCenterY - offset;
 
