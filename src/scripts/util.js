@@ -34,7 +34,7 @@ export function fullAge(){
     const startTime = Date.parse('2005-02-11T00:00:00Z')
     const marks = ["years", "months", "days", "hours", "minutes", "seconds"]
     const multipliers = [60*60*24*31*12, 60*60*24*31,  60*60*24, 60*60, 60, 1 ]
-    let i = 0;
+    let i = 1;
 
     setInterval(() => {
         update(element, startTime, multipliers[i], marks[i]);
