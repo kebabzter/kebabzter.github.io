@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <script src="./scripts/typewriter.js"></script>
     <script src="https://kit.fontawesome.com/3a01c61d3a.js" crossorigin="anonymous"></script>
     <title>kebabzter</title>
 </head>
@@ -17,15 +16,29 @@
 <body class="font-rubik">
     <section class="hero h-screen bg-cyan-300/80 flex flex-col gap-10 items-center justify-center">
         <div class="text-center">
-            <h1 class="typewrite text-3xl font-bold text-cyan-800 mt-48 select-none"></h1>
+            <h1 class="typewrite text-4xl font-bold text-cyan-800 mt-48 select-none"></h1>
         </div>
 
         <button class="animate-bounce bg-cyan-800 text-cyan-300/80 px-2 py-1 rounded-full mt-10"><i
             class="fa-solid fa-chevron-down "></i></button>
          <img src="../public/go-down-cyan-removebg-preview.png" alt="" class="max-h-64">
     </section>
-    <section class="about-me h-screen">
+    <section class="about-me h-screen bg-orange-300/80 flex p-20 justify-between">
+        <div class="mt-40 ml-40 flex flex-col">
+            <h1 class="text-7xl font-bold select-none text-orange-800/80">Something about me &#58;&#41;</h1>
+                <ul class="text-orange-800/80 font-bold select-none text-xl list-disc ml-16 mt-10">
+                    <li class="mt-5">I am 19 years old</li>
+                    <li class="mt-5">I am from Varna Bulgaria</li>
+                    <li class="mt-5">I love to work out and cook</li>
+                    <li class="mt-5">I love maths and logic!</li>
+                    <li class="mt-5">Star wars nerd</li>
+                </ul>
+        </div>
+        <img src="../public//snimka-strelki.png" class="mr-40" alt="">
     </section>
+    
+    <script type="module" src="./scripts/app.js"></script>
+
 </body>
 
 </html>
