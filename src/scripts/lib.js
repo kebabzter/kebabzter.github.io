@@ -1,8 +1,9 @@
-import { typewriter, scrollToSection, fullAge, scrollToBottom } from "./util";
+import { typewriter, scrollToSection, fullAge, scrollToBottom, dynamicNavbarColor } from "./util";
 
 export{
     typewriter,
     scrollToSection,
     fullAge,
-    scrollToBottom
+    scrollToBottom,
+    dynamicNavbarColor
 }

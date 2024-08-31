@@ -3,7 +3,7 @@ export function scrollToSection() {
     const section = document.querySelector(".about-me");
     const sectionRect = section.getBoundingClientRect();
     const sectionCenterY =
-        sectionRect.top + window.scrollY + (sectionRect.height / 2);
+        sectionRect.top + window.scrollY + sectionRect.height / 2;
     const offset = window.innerHeight / 2;
     const scrollPosition = sectionCenterY - offset;
 
@@ -12,11 +12,14 @@ export function scrollToSection() {
     });
 }
 
-export function scrollToBottom(){
+export function scrollToBottom() {
     let button = document.getElementById("button-about");
     button.addEventListener("click", () => {
-        window.scrollTo({top: document.body.scrollHeight, behavior:"smooth" })
-    })
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+        });
+    });
 }
 
 export function typewriter() {
@@ -36,11 +39,18 @@ export function typewriter() {
     typewriteEffect(element, text);
 }
 
-export function fullAge(){
-    const element = document.getElementById("age")
-    const startTime = Date.parse('2005-02-11T00:00:00Z')
-    const marks = ["years", "months", "days", "hours", "minutes", "seconds"]
-    const multipliers = [60*60*24*31*12, 60*60*24*31,  60*60*24, 60*60, 60, 1 ]
+export function fullAge() {
+    const element = document.getElementById("age");
+    const startTime = Date.parse("2005-02-11T00:00:00Z");
+    const marks = ["years", "months", "days", "hours", "minutes", "seconds"];
+    const multipliers = [
+        60 * 60 * 24 * 31 * 12,
+        60 * 60 * 24 * 31,
+        60 * 60 * 24,
+        60 * 60,
+        60,
+        1,
+    ];
     let i = 1;
 
     setInterval(() => {
@@ -49,14 +59,34 @@ export function fullAge(){
         if (i === marks.length) {
             i = 0;
         }
-    },3000)    
+    }, 3000);
 }
 
-function update(element, startTime, multiplier, mark){
+function update(element, startTime, multiplier, mark) {
     const date = new Date(startTime);
     const now = new Date();
     let diffMil = now.getTime() - date.getTime();
-    let seconds = Math.floor(diffMil / (1000 * multiplier))
-    
-    element.textContent = `I am ${seconds} ${mark} old`
+    let seconds = Math.floor(diffMil / (1000 * multiplier));
+
+    element.textContent = `I am ${seconds} ${mark} old`;
 }
+
+export function dynamicNavbarColor() {
+    window.addEventListener("scroll", () => {
+        let element = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+            element.classList.remove("bg-cyan-300/80");
+            element.classList.add("bg-transparent");
+        } else {
+            element.classList.remove("bg-transparent");
+            element.classList.add("bg-cyan-300/80");
+        }
+    });
+}
+
+// export function updateCopyright(){
+//     let element = document.getElementById("copy");
+//     let year = new Date();
+
+//     element.textContent += ` ${year.getFullYear()} - kebabzter - All Rights Reserved.`
+// }
