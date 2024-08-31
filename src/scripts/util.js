@@ -72,8 +72,12 @@ function update(element, startTime, multiplier, mark) {
 }
 
 export function dynamicNavbarColor() {
+    let element = document.getElementById("navbar");
+    if (window.scrollY > 50) {
+        element.classList.remove("bg-cyan-300/80");
+        element.classList.add("bg-transparent");
+    }
     window.addEventListener("scroll", () => {
-        let element = document.getElementById("navbar");
         if (window.scrollY > 50) {
             element.classList.remove("bg-cyan-300/80");
             element.classList.add("bg-transparent");
