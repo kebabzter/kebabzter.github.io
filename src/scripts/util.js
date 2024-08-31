@@ -71,21 +71,36 @@ function update(element, startTime, multiplier, mark) {
     element.textContent = `I am ${seconds} ${mark} old`;
 }
 
-export function dynamicNavbarColor() {
+export function dynamicNavbarColor(color) {
     let element = document.getElementById("navbar");
+    
+    
     if (window.scrollY > 50) {
-        element.classList.remove("bg-cyan-300/80");
+        element.classList.remove(color);
         element.classList.add("bg-transparent");
+    }else {
+        element.classList.remove("bg-transparent");
+        element.classList.add(color);
     }
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
-            element.classList.remove("bg-cyan-300/80");
+            element.classList.remove(color);
             element.classList.add("bg-transparent");
         } else {
             element.classList.remove("bg-transparent");
-            element.classList.add("bg-cyan-300/80");
+            element.classList.add(color);
         }
     });
+}
+
+export function navbarLocation() {
+    const path = window.location.pathname;
+    const fileName = path.substring(path.lastIndexOf('/') + 1);
+    const fileNameCut = fileName.replace('.html', '');
+
+    const element = document.getElementById(fileNameCut);    
+
+    element.classList.add("underline", "underline-offset-8", "decoration-2")
 }
 
 // export function updateCopyright(){

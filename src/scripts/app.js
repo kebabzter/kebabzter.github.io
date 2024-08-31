@@ -1,8 +1,9 @@
-import { typewriter, scrollToSection, fullAge, scrollToBottom, dynamicNavbarColor } from "./util.js";
+import { typewriter, scrollToSection, fullAge, scrollToBottom, dynamicNavbarColor, navbarLocation } from "./lib.js";
 
 typewriter();
 scrollToSection();
 fullAge();
 scrollToBottom();
-dynamicNavbarColor();
+dynamicNavbarColor("bg-cyan-300/80");
+navbarLocation();
 // updateCopyright();
