@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.{html,js}", "./src/pages/*.{html,js}"],
+  safelist:[
+    "underline",
+    "decoration-2",
+    "underline-offset-8"
+  ],
   theme: {
     extend: {
         fontFamily:{
