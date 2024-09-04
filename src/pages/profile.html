@@ -15,7 +15,7 @@
 </head>
 
 <body class="font-rubik">
-    <div class="bg-rose-300/80">
+    <div class="bg-rose-300/80 absolute">
         <header id="navbar" class="bg-transparent sticky top-0 z-10 w-100%  font-bold backdrop-blur-xl text-black/60">
             <nav class="flex justify-around shadow-sm">
                 <div class="flex gap-2 p-4">
@@ -27,15 +27,68 @@
                 </div>
             </nav>
         </header>
-        <section class="h-screen p-20">
-            <div class="flex flex-col items-center gap-2 justify-center mt-60">
-                <h1 class="text-6xl text-rose-900/80 font-bold">So, who am I?</h1>
-                <h2 class="text-sm text-rose-900/80 font-semibold">Another page about me.. I know, I know, the narcissism is insane</h2>
+        <section class="h-screen p-20 relative">
+            <div class="flex flex-col mt-44 items-center select-none">
+                <h1 class="text-rose-900 font-bold text-megaxl -rotate-12 -z-10">So, who am I?</h1>
+                <h2 class="text-md text-rose-900 font-semibold -rotate-12 -z-10">Another page about me.. I know, I know,
+                    the narcissism is insane</h2>
+            </div>
+            <div class="-rotate-12 absolute top-20 left-30 -z-10">
+                <img src="../../public/glavata.png" alt="" class=" w-80 animate-wiggle">
+            </div>
+            <img src="../../public/arrow-down.png" alt="" class="absolute right-40 bottom-40 w-40 animate-bounce-slow">
+        </section>
+        <section class="h-screen p-20 relative">
+            <div class="flex flex-col justify-between gap-6 w-1/2">
+                <article class="text-rose-900/80">
+                    <h1 class="font-bold text-5xl ">Hi, I'm Gabriel Chitarliev</h1>
+                    <h2 class="font-semibold text-3xl ">19, ICT student</h2>
+                </article>
+                <h3 class="font-semibold text-xl text-rose-900/80" >I have previously studied in First Language School Varna with a specialisation
+                    in Maths and IT</h3>
+                <article class="text-rose-900/80">
+                    <h1 class="font-bold text-5xl mb-4">About me</h1>
+                    <p class="font-semibold text-xl" >
+                        I was born in Varna Bulgaria. I love learning new things and I try to be at least a 1% better
+                        than
+                        the day before. I appreciate a good movie and one of my favourite series is the Star Wars saga
+                        (but
+                        not the sequels).
+                    </p>
+                </article>
+                <article class="text-rose-900/80">
+                    <h1 class="font-bold text-5xl mb-4">My hobbies</h1>
+                    <p class="font-semibold text-xl" >
+                        While I do love to always build upon my current knowledge base I just as everyone else am not a
+                        robot and need to relax and do some recreational activities.
+                        Some of my hobbies include weightlifting, cooking, reading books and 3d modeling.
+                        I try to visit the gym at least 4 times a week as I find it very relaxing.
+                        It helps me get rid of stress and feel active and healthy.
+                    </p>
+                </article>
+                <article class="text-rose-900/80">
+                    <h2 class="text-3xl font-bold">Some of my characteristics</h2>
+                    <ul class="font-semibold select-none text-lg list-disc ml-10">
+                        <li class="mt-5">I am very determined</li>
+                        <li class="mt-5">I try to stay calm in stressful situations</li>
+                        <li class="mt-5">I love having everything organized</li>
+                        <li class="mt-5">I also find organization in chaos 😭</li>
+                    </ul>
+                </article>
+                <div class="rotate-12 absolute right-20 -z-10">
+                    <img src="../../public/glavata.png" alt="" class=" w-96 animate-wiggle">
+                </div>
             </div>
         </section>
-        <section class="h-screen p-20">
-
-        </section>
+        <footer class="bg-transparent absolute bottom-0 w-screen left-0 flex justify-evenly text-black/50 p-2">
+            <div class="flex gap-4 text-xl">
+                <a href="https://www.instagram.com/gabriel.chitarliev/" class=""><i
+                        class="fa-brands text-2xl fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-chitarliev-b0806724b/" class=""><i
+                        class="fa-brands text-2xl fa-linkedin-in"></i></a>
+                <a href="https://github.com/kebabzter" class=""><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
     </div>
 
     <script type="module" src="../scripts/profile.js"></script>
