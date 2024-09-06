@@ -642,6 +642,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .ml-16 {
   margin-left: 4rem;
 }
@@ -680,10 +684,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
 }
 
 .flex {
@@ -756,6 +756,22 @@ video {
   animation: bounce 1s infinite;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce 5s infinite;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -798,22 +814,6 @@ video {
 
 .animate-wiggle {
   animation: wiggle 1s ease-in-out infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce-slow {
-  animation: bounce 5s infinite;
 }
 
 .cursor-pointer {
@@ -886,6 +886,10 @@ video {
   border-radius: 9999px;
 }
 
+.bg-amber-300\/80 {
+  background-color: rgb(252 211 77 / 0.8);
+}
+
 .bg-cyan-300\/80 {
   background-color: rgb(103 232 249 / 0.8);
 }
@@ -901,6 +905,14 @@ video {
 
 .bg-emerald-800\/80 {
   background-color: rgb(6 95 70 / 0.8);
+}
+
+.bg-indigo-300\/80 {
+  background-color: rgb(165 180 252 / 0.8);
+}
+
+.bg-lime-500\/80 {
+  background-color: rgb(132 204 22 / 0.8);
 }
 
 .bg-orange-300\/80 {
@@ -919,12 +931,20 @@ video {
   background-color: transparent;
 }
 
+.bg-lime-300\/80 {
+  background-color: rgb(190 242 100 / 0.8);
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-20 {
   padding: 5rem;
+}
+
+.p-28 {
+  padding: 7rem;
 }
 
 .p-4 {
@@ -1004,6 +1024,10 @@ video {
   font-weight: 600;
 }
 
+.text-black\/50 {
+  color: rgb(0 0 0 / 0.5);
+}
+
 .text-black\/60 {
   color: rgb(0 0 0 / 0.6);
 }
@@ -1040,10 +1064,6 @@ video {
 
 .text-rose-900\/80 {
   color: rgb(136 19 55 / 0.8);
-}
-
-.text-black\/50 {
-  color: rgb(0 0 0 / 0.5);
 }
 
 .underline {
