@@ -13,7 +13,7 @@ export function scrollToSection() {
 }
 
 export function scrollToBottom() {
-    let button = document.getElementById("button-about");
+    let button = document.getElementById("scrollto-bottom");
     button.addEventListener("click", () => {
         window.scrollTo({
             top: document.body.scrollHeight,
