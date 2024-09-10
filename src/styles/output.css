@@ -921,6 +921,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .break-words {
   overflow-wrap: break-word;
 }
