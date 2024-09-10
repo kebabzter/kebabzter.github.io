@@ -6,5 +6,4 @@ export{
     fullAge,
     scrollToBottom,
     dynamicNavbarColor,
-    navbarLocation
 }

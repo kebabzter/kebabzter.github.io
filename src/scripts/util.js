@@ -93,15 +93,15 @@ export function dynamicNavbarColor(color) {
     });
 }
 
-export function navbarLocation() {
-    const path = window.location.pathname;
-    const fileName = path.substring(path.lastIndexOf('/') + 1);
-    const fileNameCut = fileName.replace('.html', '');
+// export function navbarLocation() {
+//     const path = window.location.pathname;
+//     const fileName = path.substring(path.lastIndexOf('/') + 1);
+//     const fileNameCut = fileName.replace('.html', '');
     
-    const element = document.getElementById(fileNameCut? fileNameCut: "index");    
+//     const element = document.getElementById(fileNameCut? fileNameCut: "index");    
 
-    element.classList.add("underline", "underline-offset-8", "decoration-2")
-}
+//     element.classList.add("underline", "underline-offset-8", "decoration-2")
+// }
 
 // export function updateCopyright(){
 //     let element = document.getElementById("copy");
