@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .table-category{
+        @apply border-2 border-dashed border-amber-900/80 p-4 
+    }
+
+    .table-data{
+        @apply p-4 border border-amber-900/80
+    }
+}
