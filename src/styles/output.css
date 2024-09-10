@@ -626,6 +626,14 @@ video {
   top: 10rem;
 }
 
+.right-16 {
+  right: 4rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -714,12 +722,12 @@ video {
   width: 20rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-screen {
   width: 100vw;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .max-w-md {
@@ -818,6 +826,20 @@ video {
 
 .animate-wiggle {
   animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle-slow {
+  animation: wiggle 3s ease-in-out infinite;
 }
 
 .cursor-pointer {

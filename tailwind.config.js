@@ -25,6 +25,7 @@ module.exports = {
                 "spin-slowerer": "spin 15s linear infinite",
                 "bounce-slow": "bounce 5s infinite",
                 wiggle: "wiggle 1s ease-in-out infinite",
+                "wiggle-slow" : "wiggle 3s ease-in-out infinite"
             },
         },
     },
