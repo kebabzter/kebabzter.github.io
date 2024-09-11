@@ -740,6 +740,18 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .block {
   display: block;
 }
