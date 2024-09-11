@@ -31,8 +31,10 @@
             </nav>
         </header>
         <section class="min-h-screen p-20 relative">
-            <h1 class="text-8xl text-lime-900/80 -z-10 text-center font-bold">You've got questions??? Here are the answers!</h1>
-
+            <h1 class="text-8xl text-lime-900/80 -z-10 text-center font-bold">You've got questions???</h1>
+            <h2 class="text-6xl text-lime-900/80 -z-10 text-center font-bold mt-4 mb-10"> Here are the answers!</h2>
+            <img class="max-w-xl opacity-40 absolute left-4 top-96" src="../../public/probably-you.png" alt="">
+            <img class="max-w-xl opacity-40 absolute right-4 top-96 rotate-12" src="../../public/did-not-know-that.png" alt="">
             <div class="accordion w-full max-w-md mx-auto mt-5">
                 <!-- Accordion Item 1 -->
                 <div class="border-2 border-lime-900/80 hover:border-dashed rounded-md mb-2">
@@ -41,11 +43,11 @@
                         How can you print a document from your laptop at HZ?
                     </button>
                     <div
-                        class="accordion-content text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
-                        <p>Printing from your laptop can be done using <a href="https://hz.mynetpay.nl/"
+                        class="accordion-content bg-lime-300/80 text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
+                        <p class="p-2">Printing from your laptop can be done using <a href="https://hz.mynetpay.nl/"
                                 class="text-blue-500 underline">this link</a>.</p>
-                        <p>Follow these steps:</p>
-                        <ol class="list-decimal pl-5">
+                        <p class="p-2">Follow these steps:</p>
+                        <ol class="list-decimal pl-5 py-2">
                             <li>Choose your printing options</li>
                             <li>Upload the files you wish to print</li>
                             <li>Press Upload files</li>
@@ -65,11 +67,11 @@
                         How can you scan a document and send it to your laptop at HZ?
                     </button>
                     <div
-                        class="accordion-content text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
+                        class="accordion-content bg-lime-300/80 text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
                         <div class="">
-                            <p>Scanning documents is completely FREE. However, you must have at least €0.07 worth of
+                            <p class="p-2">Scanning documents is completely FREE. However, you must have at least €0.07 worth of
                                 credits in your HZ pass balance in order to proceed.</p>
-                            <ol class="list-decimal pl-5">
+                            <ol class="list-decimal pl-5 py-2">
                                 <li>Register using your HZ pass on the TouchID</li>
                                 <li>In the TouchID menu, select the "Scan" option</li>
                                 <li>Follow the scanning steps</li>
@@ -87,9 +89,9 @@
                         How can you buy something (like when I sign up for the introduction event) on the HZ web shop?
                     </button>
                     <div
-                        class="accordion-content text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
+                        class="accordion-content bg-lime-300/80 text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
                         <div class="">
-                            <p>Visit the HZ webshop, pick the items you like, then go to your shopping cart and check
+                            <p class="p-2">Visit the HZ webshop, pick the items you like, then go to your shopping cart and check
                                 out! :)</p>
                         </div>
                     </div>
@@ -102,9 +104,9 @@
                         How can you book a project space in one of the wings?
                     </button>
                     <div
-                        class="accordion-content text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
+                        class="accordion-content bg-lime-300/80 text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
                         <div class="">
-                            <p>You can book a project space by visiting the <a
+                            <p class="p-2">You can book a project space by visiting the <a
                                     href="https://hzuniversity.topdesk.net/tas/public/ssp/"
                                     class="text-blue-500 underline">Self Service Portal</a>.</p>
                         </div>
@@ -118,9 +120,9 @@
                         What are the instructions if you want to park your car at the HZ parking lot?
                     </button>
                     <div
-                        class="accordion-content text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
+                        class="accordion-content bg-lime-300/80 text-lime-900/80 text-lg font-semibold px-4 overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
                         <div class="">
-                            <p>You have to reveal your HZ pass at the barriers, then you can park in the lot of the
+                            <p class="p-2">You have to reveal your HZ pass at the barriers, then you can park in the lot of the
                                 university.</p>
                         </div>
                     </div>
@@ -150,15 +152,18 @@
                     if (otherContent !== content) {
                         otherContent.style.maxHeight = null;
                         otherContent.previousElementSibling.parentElement.classList.remove('accordion-open');
+                        otherContent.previousElementSibling.classList.remove("border-b-2", "border-dashed",  "border-lime-900/80");
                     }
                 });
 
                 // Toggle the clicked item
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
+                    content.previousElementSibling.classList.remove("border-b-2", "border-dashed",  "border-lime-900/80");
                     parent.classList.remove('accordion-open');
                 } else {
                     content.style.maxHeight = content.scrollHeight + 'px';
+                    content.previousElementSibling.classList.add("border-b-2", "border-dashed",  "border-lime-900/80");
                     parent.classList.add('accordion-open');
                 }
             });
