@@ -27,9 +27,21 @@
                     <a id="faq" class="p-2 rounded-full underline underline-offset-8 decoration-2"
                         href="faq.html">FAQ</a>
                     <a id="blog" class="p-2 rounded-full" href="blog.html">Blog</a>
+                    <button id="menu-toggle" class="px-3 py-2 rounded-full bg-black/60 text-white/60">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </div>
             </nav>
         </header>
+        <aside id="aside-menu" class="fixed top-0 right-0 h-full w-64 bg-black/10 text-black/60 backdrop-blur z-30 shadow-lg transform translate-x-full transition-transform duration-300">
+            <ul class="flex flex-col gap-4 p-8">
+                <li><a href="index.html">HZ HBO-ICT Course and Exam Regulations</a></li>
+                <li><a href="./src/pages/profile.html">The Implementation Regulations</a></li>
+                <li><a href="./src/pages/dashboard.html">Learn Environment</a></li>
+                <li><a href="./src/pages/faq.html">My HZ Study Progress</a></li>
+                <li><a href="./src/pages/blog.html">GitHub</a></li>
+            </ul>
+        </aside>
         <section class="min-h-screen p-20 relative">
             <h1 class="text-8xl text-lime-900/80 -z-10 text-center font-bold">You've got questions???</h1>
             <h2 class="text-6xl text-lime-900/80 -z-10 text-center font-bold mt-4 mb-10"> Here are the answers!</h2>
@@ -141,37 +153,7 @@
             </div>
         </footer>
     </div>
-    <script>
-        document.querySelectorAll('.accordion-header').forEach((header) => {
-            header.addEventListener('click', function () {
-                const content = this.nextElementSibling;
-                const parent = this.parentElement;
-
-                // Close all other accordion items
-                document.querySelectorAll('.accordion-content').forEach((otherContent) => {
-                    if (otherContent !== content) {
-                        otherContent.style.maxHeight = null;
-                        otherContent.previousElementSibling.parentElement.classList.remove('accordion-open');
-                        otherContent.previousElementSibling.classList.remove("border-b-2", "border-dashed",  "border-lime-900/80");
-                    }
-                });
-
-                // Toggle the clicked item
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                    content.previousElementSibling.classList.remove("border-b-2", "border-dashed",  "border-lime-900/80");
-                    parent.classList.remove('accordion-open');
-                } else {
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                    content.previousElementSibling.classList.add("border-b-2", "border-dashed",  "border-lime-900/80");
-                    parent.classList.add('accordion-open');
-                }
-            });
-        });
-
-
-    </script>
-
+    <script type="module" src="../scripts/faq.js"></script>
 </body>
 
 </html>

@@ -25,16 +25,29 @@
                 <a id="dashboard" class="p-2 rounded-full" href="./src/pages/dashboard.html">Dashboard</a>
                 <a id="faq" class="p-2 rounded-full" href="./src/pages/faq.html">FAQ</a>
                 <a id="blog" class="p-2 rounded-full" href="./src/pages/blog.html">Blog</a>
+                <button id="menu-toggle" class="px-3 py-2 rounded-full bg-black/60 text-white/60">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </nav>
     </header>
+
+    <aside id="aside-menu" class="fixed top-0 right-0 h-full w-64 bg-black/10 text-black/60 backdrop-blur z-30 shadow-lg transform translate-x-full transition-transform duration-300">
+        <ul class="flex flex-col gap-4 p-8">
+            <li><a href="index.html">HZ HBO-ICT Course and Exam Regulations</a></li>
+            <li><a href="./src/pages/profile.html">The Implementation Regulations</a></li>
+            <li><a href="./src/pages/dashboard.html">Learn Environment</a></li>
+            <li><a href="./src/pages/faq.html">My HZ Study Progress</a></li>
+            <li><a href="./src/pages/blog.html">GitHub</a></li>
+        </ul>
+    </aside>
     <!-- Hero section -->
     <section class="hero min-h-screen bg-cyan-300/80 flex flex-col gap-10 items-center justify-center ">
         <div class="text-center">
             <h1 class="typewrite text-4xl font-bold text-cyan-800 mt-48 select-none"></h1>
         </div>
 
-        <button class="animate-bounce bg-cyan-800 text-cyan-300/80 px-2 py-1 rounded-full mt-10"><i
+        <button id="scrollto-section" class="animate-bounce bg-cyan-800 text-cyan-300/80 px-2 py-1 rounded-full mt-10"><i
                 class="fa-solid fa-chevron-down "></i></button>
         <img src="../public/go-down-cyan-removebg-preview.png" alt="" class="max-h-64 select-none">
     </section>
@@ -97,8 +110,7 @@
             </div>
         </footer>
     </section>
-    <script type="module" src="./src/scripts/app.js"></script>
-
+    <script type="module" src="./src/scripts/app.js"></script>   
 </body>
 
 </html>

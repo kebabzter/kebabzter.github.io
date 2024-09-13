@@ -1,3 +1,4 @@
-import { scrollToBottom } from "./lib.js";
+import { openAside, scrollToBottom } from "./lib.js";
 
 scrollToBottom();
+openAside();

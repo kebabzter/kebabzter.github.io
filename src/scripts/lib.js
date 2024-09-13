@@ -1,4 +1,4 @@
-import { typewriter, scrollToSection, fullAge, scrollToBottom, dynamicNavbarColor } from "./util.js";
+import { typewriter, scrollToSection, fullAge, scrollToBottom, dynamicNavbarColor, openAside, accordionFunc } from "./util.js";
 
 export{
     typewriter,
@@ -6,4 +6,6 @@ export{
     fullAge,
     scrollToBottom,
     dynamicNavbarColor,
+    openAside,
+    accordionFunc
 }

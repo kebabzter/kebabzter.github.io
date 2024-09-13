@@ -1,5 +1,5 @@
 export function scrollToSection() {
-    let button = document.querySelector("button");
+    let button = document.querySelector("#scrollto-section");
     const section = document.querySelector(".about-me");
     const sectionRect = section.getBoundingClientRect();
     const sectionCenterY =
@@ -90,6 +90,43 @@ export function dynamicNavbarColor(color) {
             element.classList.remove("bg-transparent");
             element.classList.add(color);
         }
+    });
+}
+
+export function openAside(){
+    document.querySelector("#menu-toggle").addEventListener('click', function () {
+        const asideMenu = document.querySelector("#aside-menu");
+        asideMenu.classList.toggle('translate-x-full');
+        asideMenu.classList.toggle('translate-x-0');       
+    })
+}
+
+export function accordionFunc(){
+    document.querySelectorAll('.accordion-header').forEach((header) => {
+        header.addEventListener('click', function () {
+            const content = this.nextElementSibling;
+            const parent = this.parentElement;
+
+            // Close all other accordion items
+            document.querySelectorAll('.accordion-content').forEach((otherContent) => {
+                if (otherContent !== content) {
+                    otherContent.style.maxHeight = null;
+                    otherContent.previousElementSibling.parentElement.classList.remove('accordion-open');
+                    otherContent.previousElementSibling.classList.remove("border-b-2", "border-dashed",  "border-lime-900/80");
+                }
+            });
+
+            // Toggle the clicked item
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.previousElementSibling.classList.remove("border-b-2", "border-dashed",  "border-lime-900/80");
+                parent.classList.remove('accordion-open');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.previousElementSibling.classList.add("border-b-2", "border-dashed",  "border-lime-900/80");
+                parent.classList.add('accordion-open');
+            }
+        });
     });
 }
 
