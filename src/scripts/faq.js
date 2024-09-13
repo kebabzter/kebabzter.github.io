@@ -1,3 +1,4 @@
-import { accordionFunc } from "./lib.js";
+import { accordionFunc, openAside } from "./lib.js";
 
 accordionFunc();
+openAside();
