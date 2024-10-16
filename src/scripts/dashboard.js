@@ -44,6 +44,7 @@ function grading(){
         
         if (grade != null && grade > 0 && grade <= 10) {
             gradeElement.removeEventListener('click', dataHandler)
+            gradeElement.classList.remove("hover:text-lg", "hover:cursor-pointer")
             if(Number(grade) > 5.5){
                 gradeElement.classList.add("table-passed");
                 steadyCounter(credits);

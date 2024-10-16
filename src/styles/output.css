@@ -1256,14 +1256,6 @@ video {
   font-weight: 600;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
 .italic {
   font-style: italic;
 }
@@ -1432,6 +1424,15 @@ video {
 
 .hover\:border-dashed:hover {
   border-style: dashed;
+}
+
+.hover\:bg-diagonal-dash:hover {
+  background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2) 1px, transparent 2px, transparent 10px);
+}
+
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .focus\:outline-none:focus {
