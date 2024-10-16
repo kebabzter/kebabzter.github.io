@@ -1,4 +1,4 @@
-import { openAside } from "./lib.js";
+import { openAside, steadyCounter } from "./lib.js";
 
 openAside();
 grading();
@@ -38,11 +38,21 @@ function grading(){
     function dataHandler(e){
         let grade = prompt(`Enter the grade you received for the selected exam`, 10);
         let gradeElement = e.target;
+        let credits = Number(e.target.previousElementSibling.textContent);
+        console.log(credits);
+        
         
         if (grade != null && grade > 0 && grade <= 10) {
             gradeElement.removeEventListener('click', dataHandler)
-            Number(grade) > 5.5 ? gradeElement.classList.add("table-passed") : gradeElement.classList.add("table-not-passed"); //changes color of grade element bg for feedback
+            if(Number(grade) > 5.5){
+                gradeElement.classList.add("table-passed");
+                steadyCounter(credits);
+            } else{
+                gradeElement.classList.add("table-not-passed")
+            }
             gradeElement.textContent = Number(grade);
         }
     }
+
+    
 }

@@ -101,6 +101,25 @@ export function openAside(){
     })
 }
 
+export function steadyCounter(creditsToAdd){
+    const counter = document.getElementById("creditsCounter");
+    let currentCredits = Number(counter.textContent.split("/")[0]);
+    const increment = 0.25;
+
+    function updateCounter(creditsAdded) {
+        if (creditsAdded < creditsToAdd) {
+            currentCredits += increment;
+            counter.textContent = `${currentCredits}/60`;
+
+            setTimeout(() => {
+                updateCounter(creditsAdded + increment);
+            }, 50/creditsToAdd); //updates count depending on the amount of credits to be added
+        }
+    }
+
+    updateCounter(0);
+}
+
 export function accordionFunc(){
     document.querySelectorAll('.accordion-header').forEach((header) => {
         header.addEventListener('click', function () {
