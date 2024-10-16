@@ -10,4 +10,12 @@
     .table-data{
         @apply p-4 border border-amber-900/80
     }
+
+    .table-passed{
+        @apply bg-green-500/40
+    }
+
+    .table-not-passed{
+        @apply bg-red-500/50
+    }
 }
