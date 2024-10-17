@@ -768,6 +768,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -836,6 +840,40 @@ video {
   width: 100vw;
 }
 
+.w-3\/6 {
+  width: 50%;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
+}
+
+.min-w-min {
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -846,6 +884,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-72 {
+  max-width: 18rem;
 }
 
 .table-fixed {
@@ -1037,6 +1079,10 @@ video {
   gap: 1.5rem;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1150,6 +1196,26 @@ video {
   padding: 2rem;
 }
 
+.p-\[5vw\] {
+  padding: 5vw;
+}
+
+.p-\[20vw\] {
+  padding: 20vw;
+}
+
+.p-\[80vw\] {
+  padding: 80vw;
+}
+
+.p-\[40vw\] {
+  padding: 40vw;
+}
+
+.p-\[30vw\] {
+  padding: 30vw;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1175,8 +1241,37 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.px-80 {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.px-96 {
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+
+.px-\[30vw\] {
+  padding-left: 30vw;
+  padding-right: 30vw;
+}
+
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .text-left {
@@ -1246,6 +1341,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -1330,6 +1430,15 @@ video {
 
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-black\/80 {
+  color: rgb(0 0 0 / 0.8);
 }
 
 .underline {
@@ -1424,10 +1533,6 @@ video {
 
 .hover\:border-dashed:hover {
   border-style: dashed;
-}
-
-.hover\:bg-diagonal-dash:hover {
-  background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2) 1px, transparent 2px, transparent 10px);
 }
 
 .hover\:text-lg:hover {

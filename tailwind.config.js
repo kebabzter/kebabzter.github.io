@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./*.{html,js}", "./src/pages/*.{html,js}"],
+    content: ["./*.{html,js}", "./src/pages/*.{html,js}", "./src/pages/blog-posts/*.{html,js}"],
     safelist: ["underline", "decoration-2", "underline-offset-8"],
     theme: {
         extend: {
