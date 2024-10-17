@@ -1111,12 +1111,21 @@ video {
   border-width: 4px;
 }
 
+.border-l-4 {
+  border-left-width: 4px;
+}
+
 .border-amber-900\/80 {
   border-color: rgb(120 53 15 / 0.8);
 }
 
 .border-lime-900\/80 {
   border-color: rgb(54 83 20 / 0.8);
+}
+
+.border-indigo-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
 .bg-amber-300\/80 {
@@ -1272,6 +1281,10 @@ video {
 
 .pb-40 {
   padding-bottom: 10rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-left {
