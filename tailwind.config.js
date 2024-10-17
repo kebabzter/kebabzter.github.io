@@ -4,6 +4,40 @@ module.exports = {
     safelist: ["underline", "decoration-2", "underline-offset-8"],
     theme: {
         extend: {
+            colors:{
+                "pastel-peach": {
+                    300: '#ffd3b6',
+                    600: '#ff8433',
+                    900: '#af4500'
+                },
+                "pastel-purple": {
+                    300: '#c392d2',
+                    600: '#a4d05d',
+                    900: '#572a65'
+                },
+                "pastel-rose":{
+                    300: '#ff8b94',
+                    600: '#ff1527',
+                    900: '#9e000c'
+                },
+                "pastel-sunset":{
+                    300: '#ffaaa5',
+                    600: '#ff3327',
+                    900: '#a80900'
+                },
+                "pastel-sand":{
+                    300: '#f3db8d',
+                    600: '#ebc240',
+                    900: '#745b0c'
+                },
+                "pastel-baby":{
+                    300: '#8eceff',
+                    500: '#36a7ff',
+                    600: '#0a94ff',
+                    900: '#004b84'
+                }
+                
+            },
             fontFamily: {
                 rubik: ["Rubik", "sans-serif"],
             },
