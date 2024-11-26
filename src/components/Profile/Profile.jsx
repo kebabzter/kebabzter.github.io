@@ -25,7 +25,7 @@ const Profile = () => {
                     </div>
                     <div className="-rotate-12 absolute top-20 left-30 -z-10">
                         <img
-                            src="../../public/glavata.png"
+                            src="../../public/images/glavata.png"
                             alt=""
                             className=" w-80 animate-wiggle"
                         ></img>
@@ -38,7 +38,7 @@ const Profile = () => {
                         });
                     }}>
                         <img
-                            src="/public/arrow-down.png"
+                            src="/public/images/arrow-down.png"
                             alt=""
                             className="hover:cursor-pointer   absolute right-40 bottom-40 w-40 animate-bounce-slow"
                         ></img>
@@ -105,13 +105,13 @@ const Profile = () => {
                         </article>
                         <div className="rotate-12 absolute right-10 -z-10">
                             <img
-                                src="/public/glavata.png"
+                                src="/public/images/glavata.png"
                                 alt=""
                                 className=" max-w-3xl animate-wiggle-slow"
                             ></img>
                         </div>
                         <div className="flex flex-col gap-4 absolute bottom-20 left-1/2 items-center justify-center">
-                            <img className="max-w-20" src="/public/skills.png" alt="" /><img/>
+                            <img className="max-w-20" src="/public/images/skills.png" alt="" /><img/>
                             <div>
                                 <button
                                     id="scrollto-bottom"

@@ -39,7 +39,7 @@ const Home = () => {
                     <i className="fa-solid fa-chevron-down "></i>
                 </button>
                 <img
-                    src="/public/go-down-cyan-removebg-preview.png"
+                    src="/public/images/go-down-cyan-removebg-preview.png"
                     alt=""
                     className="max-h-64 select-none"
                 ></img>
@@ -60,7 +60,7 @@ const Home = () => {
                     </ul>
                 </div>
                 <img
-                    src="/public/snimka-strelki.png"
+                    src="/public/images/snimka-strelki.png"
                     className="mr-40 select-none max-w-lg"
                     alt=""
                 ></img>
@@ -125,7 +125,7 @@ const Home = () => {
                     </p>
                 </div>
                 <img
-                    src="/public/me-in-drawing.png"
+                    src="/public/images/me-in-drawing.png"
                     alt=""
                     className="absolute w-2/5 left-32 bottom-60 -rotate-12 select-none"
                 ></img>
