@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "../Main/Navigation/Navigation";
+import Footer from "../Main/Footer/Footer";
 
 const Blog = () => {
     return(
@@ -49,6 +50,8 @@ const Blog = () => {
                             </li>
                         </ul>
                     </div>
+            <Footer></Footer>
+
                 </section>
         </div>
     );

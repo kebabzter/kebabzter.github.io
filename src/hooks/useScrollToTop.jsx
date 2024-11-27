@@ -7,7 +7,7 @@ const useScrollToTop = (section) => {
             block:"start",
             inline:"nearest"
         });
-    },[])
+    })
 }
 
 export default useScrollToTop;

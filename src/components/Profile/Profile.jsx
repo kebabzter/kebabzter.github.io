@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Navigation from "../Main/Navigation/Navigation";
+import Footer from "../Main/Footer/Footer";
 import useScrollToTop from "../../hooks/useScrollToTop";
 
 const Profile = () => {
@@ -10,11 +11,11 @@ const Profile = () => {
     useScrollToTop(top);
 
     return (
-        <>
+        <div className="h-screen overflow-y-scroll snap-y snap-mandatory overflow-x-hidden">
             <div ref={top}  className="bg-pastel-rose-300/80 relative">
             <Navigation></Navigation>
-                <section  className="min-h-screen p-20 relative">
-                    <div className="flex flex-col mt-44 items-center select-none">
+                <section  className="min-h-screen p-20 relative snap-center">
+                    <div className="flex flex-col mt-52 items-center select-none">
                         <h1 className="text-pastel-rose-900 font-bold text-megaxl -rotate-12 -z-10">
                             So, who am I?
                         </h1>
@@ -44,7 +45,7 @@ const Profile = () => {
                         ></img>
                     </button>
                 </section>
-                <section ref={secondSection} className="info min-h-screen p-28 relative">
+                <section ref={secondSection} className="info min-h-screen p-28 relative snap-center">
                     <div className="flex flex-col justify-between gap-6 w-1/2">
                         <article className="text-pastel-rose-900/80">
                             <h1 className="font-bold text-5xl ">
@@ -110,7 +111,7 @@ const Profile = () => {
                                 className=" max-w-3xl animate-wiggle-slow"
                             ></img>
                         </div>
-                        <div className="flex flex-col gap-4 absolute bottom-20 left-1/2 items-center justify-center">
+                        <div className="flex flex-col gap-4 absolute bottom-20 left-1/2 items-center justify-center -translate-x-1/2 -translate-1/2">
                             <img className="max-w-20" src="/public/images/skills.png" alt="" /><img/>
                             <div>
                                 <button
@@ -128,9 +129,11 @@ const Profile = () => {
                         </div>
                     </div>
                 </section>
-                <section ref={thirdSection} className="min-h-screen p-28 relative"></section>{" "}
+                <section ref={thirdSection} className="min-h-screen p-28 relative snap-center">
+            <Footer></Footer>
+            </section>{" "}
             </div>
-        </>
+        </div>
     );
 };
 

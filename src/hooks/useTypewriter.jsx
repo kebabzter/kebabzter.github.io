@@ -19,7 +19,7 @@ const useTypewriter = (text, element, i = 0) => {
         hasRun.current = true;
 
         typewriteEffect();
-    }, [])
+    })
 }
 
 export default useTypewriter;
